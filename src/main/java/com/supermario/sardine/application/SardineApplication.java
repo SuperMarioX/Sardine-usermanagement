@@ -7,7 +7,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Sardine app boot entrance
  */
 
-
 @SpringBootApplication
 public class SardineApplication {
     public static void main(String[] args) {
