@@ -3,16 +3,35 @@ package com.supermario.sardine.entity;
 import java.io.Serializable;
 
 /**
- * Base entity for this system
+ * To:
+ *      Base entity for user, role, permissions
+ *
+ * Date:
+ *      2017-05-01
+ *
+ * Version:
+ *      v1.0
+ *
  */
 
 public class BaseEntity implements Serializable {
+
     private static final long serialVersionUID = -7670555913753374081L;
 
     private String id;
     private String name;
     private long createTime;
     private long lastUpdateTime;
+    private String description;
+
+    public BaseEntity() {}
+
+    public BaseEntity(String id, String name, long createTime, long lastUpdateTime) {
+        this.id = id;
+        this.name = name;
+        this.createTime = createTime;
+        this.lastUpdateTime = lastUpdateTime;
+    }
 
     public String getId() {
         return id;
@@ -46,13 +65,11 @@ public class BaseEntity implements Serializable {
         this.lastUpdateTime = lastUpdateTime;
     }
 
-    @Override
-    public String toString() {
-        return "BaseEntity{" +
-                "id='" + id + '\'' +
-                ", name='" + name + '\'' +
-                ", createTime=" + createTime +
-                ", lastUpdateTime=" + lastUpdateTime +
-                '}';
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

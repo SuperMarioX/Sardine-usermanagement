@@ -45,6 +45,8 @@
 	- swagger
 	- moco
 	- Druid
+	- 熔断
+	- service register and found
 
 
 ### 使用什么
@@ -53,4 +55,3 @@
 	- mybatis
 	- AOP
 	- Threadlocal
-	- 
